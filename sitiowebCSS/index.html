@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Encabezado del documento -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facultad de Ciencias Naturales y Matemáticas - UES</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<!-- Cuerpo del documento -->
+<body>
+  <header> <!-- Encabezado con navegación y título principal -->
+    <nav>
+      <span class="nav-titulo">Navegación del sitio</span><br/>
+      <div class="nav-opciones">
+        <ul class="nav-list"> <!-- Lista de enlaces de navegación -->
+          <li><a href="index.html" class="nav-link"><span class="nav-icon">🏠</span> Inicio</a></li>
+          <li><a href="fcnm.html" class="nav-link"><span class="nav-icon">🎓</span> Sobre la FCNM</a></li>
+          <li><a href="historia.html" class="nav-link"><span class="nav-icon">📖</span> Historia</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="main-title">Facultad de Ciencias Naturales y Matemáticas</h1>
+    <h2 class="sub-title">Universidad de El Salvador</h2>
+  </header>
+  
+  <!-- Sección principal del contenido -->
+  <main>
+    <section class="bienvenida">  <!-- Sección de bienvenida -->
+      <h3 class="titulo-centrado">Bienvenidos a la Facultad</h3>
+      <img src="./img/Logo_facultad_azul.png" alt="Logo de la FCNM UES" class="logo" />
+      <p>
+        La Facultad de Ciencias Naturales y Matemáticas (FCNM) de la Universidad de El Salvador es un referente nacional
+        en la formación de profesionales en las áreas de Biología, Física, Matemática, Química y Estadística. Nuestra
+        misión es impulsar la investigación, la docencia y la proyección social, contribuyendo al desarrollo científico
+        y tecnológico del país.
+      </p>
+      <div class="centrado">
+        <a href="https://www.facebook.com/Naturales.UES/?locale=es_LA" id="destacado" target="_blank" rel="noopener noreferrer">Visita el sitio oficial de la FCNM</a>
+      </div>
+    </section>
+    <!-- Sección de formulario contacto -->
+    <section class="formulario-contacto">
+      <form action="#" method="post" class="formulario">
+        <h3>Contáctanos</h3>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <fieldset class="grupo-genero">
+          <legend>Género:</legend>
+          <label><input type="radio" id="masculino" name="genero" value="masculino" required /> Masculino</label>
+          <label><input type="radio" id="femenino" name="genero" value="femenino" /> Femenino</label>
+        </fieldset>
+
+        <label><input type="checkbox" id="suscripcion" name="suscripcion" value="si" /> Deseo recibir información sobre eventos y noticias</label>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </main>
+  <!-- Pie de página con enlaces de navegación -->
+  <footer>
+    <nav>
+      <a href="index.html">🏠 Inicio</a>
+      <b>|</b>
+      <a href="fcnm.html">🎓 Sobre la FCNM</a>
+      <b>|</b>
+      <a href="historia.html">📖 Historia</a>
+    </nav>
+    <small>Navega por el sitio usando los enlaces superiores o inferiores</small><br />
+    <small>Autor: @sazmarquez</small>
+  </footer>
+</body>
+
+</html>
